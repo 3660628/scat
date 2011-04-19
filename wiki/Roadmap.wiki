@@ -2,6 +2,6 @@
 #labels Phase-Implementation,Phase-Design,Phase-Requirements
 
 = Script canvas and block palette =
-* Port the block palette and the script canvas morphs
-* Be able to add and nest blocks into the script canvas
-* Be able to run Smalltalk code by executing block scripts
+  * Port the block palette and the script canvas morphs
+  * Be able to add and nest blocks into the script canvas
+  * Be able to run Smalltalk code by executing block scripts
