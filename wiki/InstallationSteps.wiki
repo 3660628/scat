@@ -4,11 +4,10 @@
 = Scratch for Pharo: Installation Steps =
 
   * Download a Pharo 1.1.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28015/Pharo-1.1.1-OneClick.zip here].
-   _* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!_
-
+,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSource1.4.zip ScratchSkin1.4.zip]
 
-  * Unzip the previous package into the same directory where the Pharo image lies (i.e. _Pharo-1.1.1-OneClick/Contents/Resources_)
+  * Unzip the previous package into the same directory where the Pharo image lies (i.e. {{{Pharo-1.1.1-OneClick/Contents/Resources}}})
 
   * Load the nscratch package from the following Monticello repository:
 {{{
