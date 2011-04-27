@@ -40,13 +40,14 @@ The parts of the Scratch project that have been ported are listed below, and the
 
 Found [http://www.squeaksource.com/nscratch.html here].
 
-The purpose of this repository is to hold all changes made in the Pharo Scat image so that the whole community can work on the project without having to download the image. So far, only the following parts have been uploaded:
+The purpose of this repository *was* to hold all changes made in the Pharo Scat image so that the whole community could work on the project without having to download the image. So far, only the following parts had been uploaded:
 
   * Block palette
   * Script canvas
 
-There are several problems left to solve, like changes that were made to system classes. Not only some methods were added (solvable by categorizing them as Extensions) but also some were modified.
-In some cases, instance variables were added to system classes.
+Right now, this repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
+
+So far, most things are working, but we are missing several things and getting problems with VM primitives. For some reason, the current VM in the One Click image is a Squeak one, and not a Cog one like it used to be.
 
 = General concerns =
 
