@@ -45,14 +45,14 @@ MCHttpRepository
    password: ''
 }}}
 
-== Microsoft Windows ==
-_Untested, if you have a Windows machine and manage to get it working, please report the steps you followed to us. Thank you!_
-
   * Run the following code from a Workspace:
 {{{
 ScratchFrameMorph new startup openInWorld
 }}}
   * A block browser and canvas should open. Some things work, some don’t...
+
+== Microsoft Windows ==
+_Untested, if you have a Windows machine and manage to get it working, please report the steps you followed to us. Thank you!_
 
 = Getting the plugins working =
 If you wish to have the camera (and some other things) working, you'll need to download the original Scratch plugins and include them in the root folder of the Pharo package.
