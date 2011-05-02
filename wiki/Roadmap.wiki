@@ -3,7 +3,7 @@
 
 = Immediate milestones =
   * StringFieldMorphs are not editable. We should either fix them or use EntryFieldMorphs instead
-  * InputEventSensor very differently than it used. Many things are broken because of it
+  * InputEventSensor behaves very differently than it used to. Many things are broken because of it
   * Fix encodings
   * Layouts of most DialogBoxMorphs are broken
 
