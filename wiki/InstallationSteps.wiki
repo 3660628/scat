@@ -59,8 +59,5 @@ If you wish to have the camera (and some other things) working, you'll need to d
 
 These are feely available [http://download.scratch.mit.edu/source-code/ScratchPluginSrc1.4.zip here]. Just download this package and unzip it in your Pharo root folder.
 
-= Extra steps for GNU/Linux users =
-
-
 = ToDo =
 We are planning to automate all this process, so that upon loading the scat package from Squeaksource, all required external files are automatically downloaded and unpacked where needed.
