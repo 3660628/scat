@@ -33,5 +33,12 @@ To get the camera working in GNU/Linux you'll need to be using a later CogVM bui
 
 At the moment, the last CogVM is [http://www.mirandabanda.org/files/Cog/VM/VM.r2382/coglinux.tgz this one].
 
+Unzip the coglinux.tgz package and perform the following operations:
+{{{
+cp coglinux/* Pharo.app/Contents/Linux
+mv Pharo.app/Contents/Linux/squeak Pharo.app/Contents/Linux/squeakvm
+cp coglinux/lib/squeak/3.9-7/* Pharo.app/Contents/Linux
+}}}
+
 = ToDo =
 We are planning to automate all this process, so that upon loading the scat package from Squeaksource, all required external files are automatically downloaded and unpacked where needed.
