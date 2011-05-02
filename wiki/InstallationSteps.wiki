@@ -3,7 +3,35 @@
 
 = Scratch for Pharo: Installation Steps =
 
+== GNU/Linux ==
   * Download a Pharo 1.1.1 One Click package with CogVM from: [https://gforge.inria.fr/frs/download.php/27524/Pharo-1.1.1-OneClickCogVM.zip here].
+,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
+  * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip ScratchSkin1.4.zip]
+
+  * Unzip the previous package into the same directory where the Pharo image lies (i.e. {{{Pharo-1.1.1-OneClick/Contents/Resources}}})
+
+  * To get the camera working in GNU/Linux you'll need to be using a later CogVM build than the included in the OneClick package. You can find them all [http://www.mirandabanda.org/files/Cog/VM/ here]. At the moment, the last CogVM is [http://www.mirandabanda.org/files/Cog/VM/VM.r2382/coglinux.tgz this one]. Unzip the coglinux.tgz package and perform the following operations:
+{{{
+cp coglinux/* Pharo.app/Contents/Linux
+mv Pharo.app/Contents/Linux/squeak Pharo.app/Contents/Linux/squeakvm
+cp coglinux/lib/squeak/3.9-7/* Pharo.app/Contents/Linux
+}}}
+  * Load the nscratch package from the following Monticello repository:
+{{{
+MCHttpRepository
+   location: 'http://www.squeaksource.com/nscratch'
+   user: ''
+   password: ''
+}}}
+
+  * Run the following code from a Workspace:
+{{{
+ScratchFrameMorph new startup openInWorld
+}}}
+  * A block browser and canvas should open. Some things work, some don’t...
+
+== MacOSX ==
+  * Download a Pharo 1.1.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28015/Pharo-1.1.1-OneClick.zip here].
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip ScratchSkin1.4.zip]
 
@@ -29,16 +57,7 @@ If you wish to have the camera (and some other things) working, you'll need to d
 These are feely available [http://download.scratch.mit.edu/source-code/ScratchPluginSrc1.4.zip here]. Just download this package and unzip it in your Pharo root folder.
 
 = Extra steps for GNU/Linux users =
-To get the camera working in GNU/Linux you'll need to be using a later CogVM build than the included in the OneClick package. You can find them all [http://www.mirandabanda.org/files/Cog/VM/ here].
 
-At the moment, the last CogVM is [http://www.mirandabanda.org/files/Cog/VM/VM.r2382/coglinux.tgz this one].
-
-Unzip the coglinux.tgz package and perform the following operations:
-{{{
-cp coglinux/* Pharo.app/Contents/Linux
-mv Pharo.app/Contents/Linux/squeak Pharo.app/Contents/Linux/squeakvm
-cp coglinux/lib/squeak/3.9-7/* Pharo.app/Contents/Linux
-}}}
 
 = ToDo =
 We are planning to automate all this process, so that upon loading the scat package from Squeaksource, all required external files are automatically downloaded and unpacked where needed.
