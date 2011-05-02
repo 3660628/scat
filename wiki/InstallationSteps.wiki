@@ -45,6 +45,9 @@ MCHttpRepository
    password: ''
 }}}
 
+== Microsoft Windows ==
+_Untested, if you have a Windows machine and manage to get it working, please report the steps you followed to us. Thank you!_
+
   * Run the following code from a Workspace:
 {{{
 ScratchFrameMorph new startup openInWorld
