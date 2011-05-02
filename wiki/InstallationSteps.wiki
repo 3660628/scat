@@ -3,7 +3,7 @@
 
 = Scratch for Pharo: Installation Steps =
 
-  * Download a Pharo 1.1.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28015/Pharo-1.1.1-OneClick.zip here].
+  * Download a Pharo 1.1.1 One Click package with CogVM from: [https://gforge.inria.fr/frs/download.php/27524/Pharo-1.1.1-OneClickCogVM.zip here].
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip ScratchSkin1.4.zip]
 
@@ -22,3 +22,16 @@ MCHttpRepository
 ScratchFrameMorph new startup openInWorld
 }}}
   * A block browser and canvas should open. Some things work, some don’t...
+
+= Getting the plugins working =
+If you wish to have the camera (and some other things) working, you'll need to download the original Scratch plugins and include them in the root folder of the Pharo package.
+
+These are feely available [http://download.scratch.mit.edu/source-code/ScratchPluginSrc1.4.zip here]. Just download this package and unzip it in your Pharo root folder.
+
+= Extra steps for GNU/Linux users =
+To get the camera working in GNU/Linux you'll need to be using a later CogVM build than the included in the OneClick package. You can find them all [http://www.mirandabanda.org/files/Cog/VM/ here].
+
+At the moment, the last CogVM is [http://www.mirandabanda.org/files/Cog/VM/VM.r2382/coglinux.tgz this one].
+
+= ToDo =
+We are planning to automate all this process, so that upon loading the scat package from Squeaksource, all required external files are automatically downloaded and unpacked where needed.
