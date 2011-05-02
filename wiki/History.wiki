@@ -5,8 +5,40 @@
 
 This page explains everything that's been done so far and what problems have we found to the current point.
 
+= Scat Squeaksource repository =
+
+Found [http://www.squeaksource.com/nscratch.html here].
+
+The purpose of this repository *was* to hold all changes made in the Pharo Scat image so that the whole community could work on the project without having to download the image. So far, only the following parts had been uploaded:
+
+  * Block palette
+  * Script canvas
+
+Right now, this repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
+
+So far, most things are working, but we are missing several things and getting problems with VM primitives. Please refer to the InstallationSteps wiki page to get updated information on how to load and run the project.
+
+= General concerns =
+
+  * In many cases, the Scratch implementation took advantage of old Squeak bugs, like writing into parameters (both method and block parameters), which has been solved by creating local variables that take the value of the parameter, are used as necessary and are returned at the end of the method/block.
+  * In other cases, scope bugs were abused, which also had to be fixed by using local variables.
+  * The Morphic event system has changed a lot recently. We should consider whether it's better to try to hack it back into what it was like or port Scratch morphs into the way events work now.
+  * Should the final product be an independent package loadable into Pharo or a full Pharo-based image?
+  * Note that this project needs to add and modify quite a lot of system methods, mainly from the Morphic package, but also from some other kernel classes, like Number or String. For this reason, it is *strongly recommended* that you install the Scat package in a fresh image, as detailed in the InstallationSteps wiki page.
+  * In some cases, instance and class variables had to be added into system classes, which is why we had to extend some class initialization methods as follows:
+{{{
+    ClassThatNeedsAnExtraInstVar >> initialize
+       "If we don't check whether the variable already exists we'll get an error when loading the package for the second time"
+       (self instVarNames includes: 'someInstanceVariable') 
+            ifFalse: [self addInstVarName: 'someInstanceVariable']
+}}}
+
 = Scat Image =
 
+===ANNOUNCEMENT===
+This image is now obsolete, as the monticello package has advanced to the point where downloading a full image is pointless. Please refer to the InstallationSteps wiki page for further instructions.
+
+===The information below is OBSOLETE===
 Downloadable [http://code.google.com/p/scat/downloads/detail?name=Pharo.zip&can=2&q= here].
 
 The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
@@ -35,23 +67,3 @@ The parts of the Scratch project that have been ported are listed below, and the
     # When dragging sprites around, the whole scene becomes white
     # Parts of windows will become embedded in the scene
     # Points 3 and 4 can be temporarily fixed by switching the scene layout
-
-= Scat Squeaksource repository =
-
-Found [http://www.squeaksource.com/nscratch.html here].
-
-The purpose of this repository *was* to hold all changes made in the Pharo Scat image so that the whole community could work on the project without having to download the image. So far, only the following parts had been uploaded:
-
-  * Block palette
-  * Script canvas
-
-Right now, this repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
-
-So far, most things are working, but we are missing several things and getting problems with VM primitives. For some reason, the current VM in the One Click image is a Squeak one, and not a Cog one like it used to be.
-
-= General concerns =
-
-  * In many cases, the Scratch implementation took advantage of old Squeak bugs, like writing into parameters (both method and block parameters), which has been solved by creating local variables that take the value of the parameter, are used as necessary and are returned at the end of the method/block.
-  * In other cases, scope bugs were abused, which also had to be fixed by using local variables.
-  * The Morphic event system has changed a lot recently. We should consider whether it's better to try to hack it back into what it was like or port Scratch morphs into the way events work now.
-  * Should the final product be an independent package loadable into Pharo or a full Pharo-based image?
