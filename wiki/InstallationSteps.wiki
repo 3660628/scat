@@ -19,6 +19,6 @@ MCHttpRepository
 
   * Run the following code from a Workspace:
 {{{
-ScratchStageMorph example
+ScratchFrameMorph new startup openInWorld
 }}}
   * A block browser and canvas should open. Some things work, some don’t...
