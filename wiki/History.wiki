@@ -52,7 +52,8 @@ The parts of the Scratch project that have been ported are listed below, and the
   * In some cases, instance and class variables had to be added into system classes, which is why we had to extend some class initialization methods as follows:
 {{{
     ClassThatNeedsAnExtraInstVar >> initialize
-       "If we don't check whether the variable already exists we'll get an error when loading the package for the second time"
+       "If we don't check whether the variable already exists 
+        we'll get an error when loading the package for the second time"
        (self instVarNames includes: 'someInstanceVariable') 
             ifFalse: [self addInstVarName: 'someInstanceVariable']
 }}}
