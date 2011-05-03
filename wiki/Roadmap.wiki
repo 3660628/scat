@@ -8,7 +8,6 @@
   * Layouts of most DialogBoxMorphs are broken
 
 = "Would be awesome if" milestones =
-  * Automating all installation steps, so that the right files are downloaded and unpacked where needed upon loading Scat from monticello
   * Porting the current project to Pharo 1.2.1, which is not trivial because:
     * Morphic hierarchy changed quite a lot
     * isPartsBin disappeared from the Morphic instance methods library
