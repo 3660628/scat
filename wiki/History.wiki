@@ -11,10 +11,17 @@ Found [http://www.squeaksource.com/nscratch.html here].
 
 This repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
 
+Upon loading the project, an automatic installer is fired up and all required files are downloaded and extracted (if missing), namely:
+  * Original Scratch Plugins (_[http://code.google.com/p/scat/downloads/detail?name=scratchPlugins.zip download]_)
+  * Original Scratch Skins (_[http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip download]_)
+  * Original Scratch Media (_[http://code.google.com/p/scat/downloads/detail?name=Media.zip download]_)
+  * Original Scratch Locales (_[http://code.google.com/p/scat/downloads/detail?name=locale.zip download]_)
+  * Original Scratch Help (_[http://code.google.com/p/scat/downloads/detail?name=Help.zip download]_)
+
 The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
 
   * Basic Morphic GUI
-    # Editable text fields can't be edited ,,*(1)*,,
+    # Editable text fields can't be edited *^(1)^*
     # Encodings are totally broken, and many strings are not displayed
     # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen
   * Top menu generation and unfolding of subitems
@@ -24,7 +31,7 @@ The parts of the Scratch project that have been ported are listed below, and the
     # Executing scripts not working at all
   * Image editor
     # Fonts can't be changed
-    # Texts can't be edited (same as ,,*(1)*,,)
+    # Texts can't be edited (same as *1*)
   * Webcam importing
   * File browser
     # Layout is broken
