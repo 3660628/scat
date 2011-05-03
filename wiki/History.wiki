@@ -9,14 +9,31 @@ This page explains everything that's been done so far and what problems have we 
 
 Found [http://www.squeaksource.com/nscratch.html here].
 
-The purpose of this repository *was* to hold all changes made in the Pharo Scat image so that the whole community could work on the project without having to download the image. So far, only the following parts had been uploaded:
+This repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
 
-  * Block palette
-  * Script canvas
+The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
 
-Right now, this repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
-
-So far, most things are working, but we are missing several things and getting problems with VM primitives. Please refer to the InstallationSteps wiki page to get updated information on how to load and run the project.
+  * Basic Morphic GUI
+    # Editable text fields can't be edited *[1]*
+    # Encodings are totally broken, and many strings are not displayed
+    # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen
+  * Top menu generation and unfolding of subitems
+  * Block palette and scripting canvas
+    # Some blocks disappear when clicked
+    # Nesting blocks only working if the dropped morph is not released on the receiving block's area
+    # Executing scripts not working at all
+  * Image editor
+    # Fonts can't be changed
+    # Texts can't be edited (same as *[1]*)
+  * Webcam importing
+  * File browser
+    # Layout is broken
+  * Image file importing
+  * Thumbnail generation in the file browser
+  * SceneMorph
+    # Background of sprites being dragged becomes opaque
+    # When dragging sprites around, the whole scene becomes white
+    # Points 3 and 4 can be temporarily fixed by switching the scene layout
 
 = General concerns =
 
@@ -35,35 +52,6 @@ So far, most things are working, but we are missing several things and getting p
 
 = Scat Image =
 
-===ANNOUNCEMENT===
-This image is now obsolete, as the monticello package has advanced to the point where downloading a full image is pointless. Please refer to the InstallationSteps wiki page for further instructions.
+This image is now *obsolete*, as the monticello package has advanced to the point where downloading a full image is pointless. Please refer to the InstallationSteps wiki page for further instructions.
 
-===The information below is OBSOLETE===
-Downloadable [http://code.google.com/p/scat/downloads/detail?name=Pharo.zip&can=2&q= here].
-
-The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
-
-  * Basic Morphic GUI
-    # Editable text fields can't be edited
-    # Encodings are totally broken, and many strings are not displayed
-    # Full screen mode is not working at all
-  * Top menu generation and unfolding of subitems
-  * Block palette and scripting canvas
-    # Dropping blocks into the scripting canvas not working as it should: the morph gets stuck in the handMorph and can only be released by clicking on the script canvas
-    # Some blocks disappear when clicked
-    # Nesting blocks not working at all
-    # Executing scripts not working at all
-  * Image editor
-    # Filling shapes is not working
-  * Webcam importing
-    # Doesn't fully work under Linux, importing images is possible, but there is no real-time feedback
-  * File browser
-    # Layout is broken
-  * Image file importing
-  * Thumbnail generation in the file browser
-  * SceneMorph
-    # Background of spraites being dragged becomes opaque
-    # Full screen is displaying a blank scene
-    # When dragging sprites around, the whole scene becomes white
-    # Parts of windows will become embedded in the scene
-    # Points 3 and 4 can be temporarily fixed by switching the scene layout
+In any case, it's still downloadable [http://code.google.com/p/scat/downloads/detail?name=Pharo.zip&can=2&q= here].
