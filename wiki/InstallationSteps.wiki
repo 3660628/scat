@@ -4,7 +4,7 @@
 = Scratch for Pharo: Installation Steps =
 
 == GNU/Linux ==
-  * Download a Pharo 1.1.1 One Click package with CogVM from: [https://gforge.inria.fr/frs/download.php/27524/Pharo-1.1.1-OneClickCogVM.zip here].
+  * Download a Pharo 1.2.1 One Click package with CogVM from: [http://gforge.inria.fr/frs/download.php/28439/Pharo-1.2.1-CogOneClick.zip here].
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Load the NScratch package from the following Monticello repository:
 {{{
@@ -21,7 +21,7 @@ ScratchFrameMorph new startup openInWorld
   * A block browser and canvas should open. Some things work, some don’t...
 
 == MacOSX ==
-  * Download a Pharo 1.1.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28015/Pharo-1.1.1-OneClick.zip here].
+  * Download a Pharo 1.2.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28437/Pharo-1.2.1-OneClick.zip].
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip ScratchSkin1.4.zip]
 
