@@ -1,16 +1,14 @@
 #summary This page sumarizes the steps to follow and the main milestones of the project
 #labels Phase-Implementation,Phase-Design,Phase-Requirements
 
+= Milestones to get it working in Pharo 1.2.1 =
+  * Popup menus are broken
+
 = Immediate milestones =
   * StringFieldMorphs are not editable. We should either fix them or use EntryFieldMorphs instead
   * InputEventSensor behaves very differently than it used to. Many things are broken because of it
   * Fix encodings
   * Layouts of most DialogBoxMorphs are broken
-
-= "Would be awesome if" milestones =
-  * Porting the current project to Pharo 1.2.1, which is not trivial because:
-    * Morphic hierarchy changed quite a lot
-    * isPartsBin disappeared from the Morphic instance methods library
 
 = Mandatory but hard to accomplish milestones =
   * Getting the scripts to actually do something
