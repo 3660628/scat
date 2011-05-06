@@ -2,6 +2,8 @@
 #labels Featured,Phase-Deploy
 
 = Scratch for Pharo: Installation Steps =
+^Please refer to your particular OS section, as different VMs should be used for each one.^
+<wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
 
 == GNU/Linux ==
   * Download a Pharo 1.2.1 One Click package with CogVM from: [http://gforge.inria.fr/frs/download.php/28439/Pharo-1.2.1-CogOneClick.zip here].
