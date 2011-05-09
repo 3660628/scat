@@ -13,6 +13,7 @@
 
 == Installation ==
 <wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
+
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Load the NScratch package from the following Monticello repository:
 {{{
