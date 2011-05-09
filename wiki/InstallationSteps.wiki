@@ -2,28 +2,17 @@
 #labels Featured,Phase-Deploy
 
 = Scratch for Pharo: Installation Steps =
-^Please refer to your particular OS section, as different VMs should be used for each one.^
-<wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
 
-== GNU/Linux ==
+== Required Pharo download ==
+=== GNU/Linux ===
   * Download a Pharo 1.2.1 One Click package with CogVM from: [http://gforge.inria.fr/frs/download.php/28439/Pharo-1.2.1-CogOneClick.zip here].
-,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
-  * Load the NScratch package from the following Monticello repository:
-{{{
-MCHttpRepository
-   location: 'http://www.squeaksource.com/nscratch'
-   user: ''
-   password: ''
-}}}
-  * Be patient, the process might take a while, as several external plugins, media files and other required packages are going to be downloaded and extracted automatically
-  * Run the following code from a Workspace:
-{{{
-ScratchFrameMorph new startup openInWorld
-}}}
-  * A block browser and canvas should open. Some things work, some don’t...
-
-== MacOSX ==
+=== MacOSX ===
   * Download a Pharo 1.2.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28437/Pharo-1.2.1-OneClick.zip here].
+=== Microsoft Windows ===
+ * Download a Pharo 1.2.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28437/Pharo-1.2.1-OneClick.zip here].
+
+== Installation ==
+<wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
   * Load the NScratch package from the following Monticello repository:
 {{{
@@ -38,6 +27,3 @@ MCHttpRepository
 ScratchFrameMorph new startup openInWorld
 }}}
   * A block browser and canvas should open. Some things work, some don’t...
-
-== Microsoft Windows ==
-_Untested, if you have a Windows machine and manage to get it working, please report the steps you followed to us. Thank you!_
