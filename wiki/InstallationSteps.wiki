@@ -25,8 +25,6 @@ ScratchFrameMorph new startup openInWorld
 == MacOSX ==
   * Download a Pharo 1.2.1 One Click package from: [https://gforge.inria.fr/frs/download.php/28437/Pharo-1.2.1-OneClick.zip here].
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
-  * Dowload the following package: [http://download.scratch.mit.edu/source-code/ScratchSkin1.4.zip ScratchSkin1.4.zip]
-
   * Load the NScratch package from the following Monticello repository:
 {{{
 MCHttpRepository
