@@ -1,2 +1,12 @@
 #summary Videos and screenshots
 #labels Featured
+
+= Installation Steps =
+How to get Scat working into a Pharo 1.2.1 image. Please refer to InstallationSteps for further information.
+
+<wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
+
+= Simple script =
+A demo involving drawing sprites, capturing a background from the webcam, and writing a little script that switches costumes when noise is detected.
+
+<wiki:video url="http://www.youtube.com/watch?v=3tcYcTBc0is"/>
