@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This page explains everything that's been done so far and what problems have we found to the current point.
+This page explains everything that's been done so far and what problems we have found to the current point.
 
 = Demo =
 
