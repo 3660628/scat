@@ -9,7 +9,7 @@ This page explains everything that's been done so far and what problems have we 
 
 Found [http://www.squeaksource.com/nscratch.html here].
 
-This repository is meant to hold a package that can be loaded from a 1.1.1 image to get a full-working Scat in it.
+This repository is meant to hold a package that can be loaded from a 1.2.1 image to get a full-working Scat in it.
 
 Upon loading the project, an automatic installer is fired up and all required files are downloaded and extracted (if missing), namely:
   * Original Scratch Plugins (_[http://code.google.com/p/scat/downloads/detail?name=scratchPlugins.zip download]_)
@@ -21,32 +21,29 @@ Upon loading the project, an automatic installer is fired up and all required fi
 The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
 
   * Basic Morphic GUI
-    # Editable text fields can't be edited *^(1)^*
-    # Encodings are totally broken, and many strings are not displayed
-    # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen
+    # Editable text fields lose focus when the mouse pointer leaves them
+    # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen. OTOH, when the stage is shown at full screen, stepping stops
+  * Substitution of the old dropdown menus for modern ones
+    # Some dropdown menus are broken, this issue is being looked at
   * Top menu generation and unfolding of subitems
   * Block palette and scripting canvas
-    # Some blocks disappear when clicked
-    # Nesting blocks only working if the dropped morph is not released on the receiving block's area
-    # Executing scripts not working at all
+    # Some blocks are not working, mostly because of wrong string readings
   * Image editor
     # Fonts can't be changed
-    # Texts can't be edited (same as *1*)
+    # Can't type
   * Webcam importing
   * File browser
     # Layout is broken
   * Image file importing
+    # GIF images can't be imported
   * Thumbnail generation in the file browser
   * SceneMorph
     # Background of sprites being dragged becomes opaque
-    # When dragging sprites around, the whole scene becomes white
-    # Points 3 and 4 can be temporarily fixed by switching the scene layout
 
 = General concerns =
 
   * In many cases, the Scratch implementation took advantage of old Squeak bugs, like writing into parameters (both method and block parameters), which has been solved by creating local variables that take the value of the parameter, are used as necessary and are returned at the end of the method/block.
   * In other cases, scope bugs were abused, which also had to be fixed by using local variables.
-  * The Morphic event system has changed a lot recently. We should consider whether it's better to try to hack it back into what it was like or port Scratch morphs into the way events work now.
   * Should the final product be an independent package loadable into Pharo or a full Pharo-based image?
   * Note that this project needs to add and modify quite a lot of system methods, mainly from the Morphic package, but also from some other kernel classes, like Number or String. For this reason, it is *strongly recommended* that you install the Scat package in a fresh image, as detailed in the InstallationSteps wiki page.
   * In some cases, instance and class variables had to be added into system classes, which is why we had to extend some class initialization methods as follows:
