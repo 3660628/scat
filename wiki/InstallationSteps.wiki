@@ -1,7 +1,7 @@
 #summary Steps to get the current project working
 #labels Featured,Phase-Deploy
 
-= Scratch for Pharo: Installation Steps =
+= Scat: Installation Steps =
 
 == Required Pharo download ==
 === GNU/Linux ===
