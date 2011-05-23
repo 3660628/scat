@@ -5,6 +5,11 @@
 
 This page explains everything that's been done so far and what problems have we found to the current point.
 
+= Demo =
+
+Since a video is worth a hundred screenshots and a thousand words, we have recorded a short screencast showing some of the features that are already working:
+<wiki:video url="http://www.youtube.com/watch?v=3tcYcTBc0is"/>
+
 = Scat Squeaksource repository =
 
 Found [http://www.squeaksource.com/nscratch.html here].
