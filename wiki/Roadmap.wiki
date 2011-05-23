@@ -1,14 +1,8 @@
 #summary This page sumarizes the steps to follow and the main milestones of the project
 #labels Phase-Implementation,Phase-Design,Phase-Requirements
 
-= Milestones to get it working in Pharo 1.2.1 =
-  * Popup menus are broken
-
 = Immediate milestones =
-  * StringFieldMorphs are not editable. We should either fix them or use EntryFieldMorphs instead
-  * InputEventSensor behaves very differently than it used to. Many things are broken because of it
-  * Fix encodings
+  * Some Popup menus are broken
+  * StringFieldMorphs don't keep the focus when the mouse pointer leaves them
+  * InputEventSensor behaves very differently than it used to. Many things are broken because of it (i.e. the eyedrop color picker block)
   * Layouts of most DialogBoxMorphs are broken
-
-= Mandatory but hard to accomplish milestones =
-  * Getting the scripts to actually do something
