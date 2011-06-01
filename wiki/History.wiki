@@ -30,10 +30,10 @@ The parts of the Scratch project that have been ported are listed below, and the
     # Editable text fields lose focus when the mouse pointer leaves them
     # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen. OTOH, when the stage is shown at full screen, stepping stops
   * Substitution of the old dropdown menus for modern ones
-    # Some dropdown menus are broken, this issue is being looked at
+    # A few dropdown menus are still broken, but this issue is being looked at and will soon be fixed
   * Top menu generation and unfolding of subitems
   * Block palette and scripting canvas
-    # Some blocks are not working, mostly because of wrong string readings
+    # Only a few blocks (sound-related) are not working
   * Image editor
     # Fonts can't be changed
     # Can't type
