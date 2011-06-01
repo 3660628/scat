@@ -1,8 +1,0 @@
-#summary This page sumarizes the steps to follow and the main milestones of the project
-#labels Phase-Implementation,Phase-Design,Phase-Requirements
-
-= Immediate milestones =
-  * Some Popup menus are broken
-  * StringFieldMorphs don't keep the focus when the mouse pointer leaves them
-  * InputEventSensor behaves very differently than it used to. Many things are broken because of it (i.e. the eyedrop color picker block)
-  * Layouts of most DialogBoxMorphs are broken
