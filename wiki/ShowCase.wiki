@@ -10,3 +10,8 @@ How to get Scat working into a Pharo 1.2.1 image. Please refer to InstallationSt
 A demo involving drawing sprites, capturing a background from the webcam, and writing a little script that switches costumes when noise is detected.
 
 <wiki:video url="http://www.youtube.com/watch?v=3tcYcTBc0is"/>
+
+= A complex program =
+A demo showing moving sprites, pen, sensorboard interaction, message broadcasting and message interception.
+
+<wiki:video url="http://www.youtube.com/watch?v=QC6YtRHnKjM"/>
