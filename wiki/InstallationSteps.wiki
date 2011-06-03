@@ -10,16 +10,27 @@
 <wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
 
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
-  * Load the NScratch package from the following Monticello repository:
+=== METACELLO ===
+
+Run the following expression:
+
+{{{Gofer new squeaksource: 'nscratch'; package: 'NScratch'; load}}}
+
+=== MONTICELLO ===
+
+Load the NScratch package from the following Monticello repository:
 {{{
 MCHttpRepository
    location: 'http://www.squeaksource.com/nscratch'
    user: ''
    password: ''
 }}}
+
+
   * Be patient, the process might take a while, as several external plugins, media files and other required packages are going to be downloaded and extracted automatically
-  * Run the following code from a Workspace:
+
+  * When done, run the following code from a Workspace:
 {{{
-ScratchFrameMorph new startup openInWorld
+ScratchFrameMorph open
 }}}
   * A block browser and canvas should open. Some things work, some don’t...
