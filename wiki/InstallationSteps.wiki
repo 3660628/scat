@@ -14,7 +14,9 @@
 
 Run the following expression:
 
-{{{Gofer new squeaksource: 'nscratch'; package: 'NScratch'; load}}}
+{{{
+Gofer new squeaksource: 'nscratch'; package: 'NScratch'; load
+}}}
 
 === MONTICELLO ===
 
