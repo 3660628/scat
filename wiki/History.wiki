@@ -26,27 +26,7 @@ Upon loading the project, an automatic installer is fired up and all required fi
 
 Additionally, the installer adds all needed instance and class variables to system classes (VariableAdditionReference). The ExtensionsReference page details all methods that are either added to system classes or modified upon loading the project.
 
-The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
-
-  * Basic Morphic GUI
-    # Editable text fields lose focus when the mouse pointer leaves them
-    # Full screen mode is only working if the Scratch GUI window remains in its original position. This shouldn't pose a problem, as the final app will be full screen. OTOH, when the stage is shown at full screen, stepping stops
-  * Substitution of the old dropdown menus for modern ones
-    # A few dropdown menus are still broken, but this issue is being looked at and will soon be fixed
-  * Top menu generation and unfolding of subitems
-  * Block palette and scripting canvas
-    # Only a few blocks (sound-related) are not working
-  * Image editor
-    # Fonts can't be changed
-    # Can't type
-  * Webcam importing
-  * File browser
-    # Layout is broken
-  * Image file importing
-    # GIF images can't be imported
-  * Thumbnail generation in the file browser
-  * SceneMorph
-    # Background of sprites being dragged becomes opaque
+Please visit the [http://http://code.google.com/p/scat/issues issue tracker] for better details on each bug.
 
 = General concerns =
 
