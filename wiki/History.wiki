@@ -24,7 +24,7 @@ Upon loading the project, an automatic installer is fired up and all required fi
   * Original Scratch Locales (_[http://code.google.com/p/scat/downloads/detail?name=locale.zip download]_)
   * Original Scratch Help (_[http://code.google.com/p/scat/downloads/detail?name=Help.zip download]_)
 
-Additionally, the installer adds all needed instance and class variables to system classes. The detailed list can be found in VariableAdditionReference.
+Additionally, the installer adds all needed instance and class variables to system classes (VariableAdditionReference). The ExtensionsReference page details all methods that are either added to system classes or modified upon loading the project.
 
 The parts of the Scratch project that have been ported are listed below, and the remaining [http://http://code.google.com/p/scat/issues issues] to fix for each item detailed.
 
