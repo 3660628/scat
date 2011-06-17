@@ -15,6 +15,7 @@ In this page we list all methods added to / modified from system classes upon lo
   * DisplayScanner>>stringExtent: 
   * DisplayScanner>>quickPrintOn:box:font:color: 
   * DisplayScanner>>drawString:at: 
+  * Canvas>>paintImage:at:sourceRect:alpha:
   * Color>>r255 
   * Color>>setRgb: 
   * Color>>b255 
