@@ -98,7 +98,8 @@ In this page we list all methods added to / modified from system classes upon lo
   * SimpleButtonMorph>>drawToolTipAbove: 
   * IconicButton>>labelGraphic:borderWidth: 
   * IconicButton>>labelFromString: 
-  * IconicButton>>shedSelvedge 
+  * IconicButton>>shedSelvedge
+  * SampledSound>>setSamples:from:to:samplingRate:loudness:
   * StringMorph>>stringToDisplay 
   * StringMorph>>stringExtent: 
   * StringMorph>>forceUnicodeRendering: 
