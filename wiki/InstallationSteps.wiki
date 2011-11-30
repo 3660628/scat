@@ -13,17 +13,13 @@
 
 If you are behind a web proxy, you need to configure the proxy in the Pharo Settings.
 
-=== METACELLO ===
-
-Run the following expression:
+In order to install the last version of Scat, you can execute the following Gofer expression:
 
 {{{
 Gofer new squeaksource: 'nscratch'; package: 'NScratch'; load
 }}}
 
-=== MONTICELLO ===
-
-Load the NScratch package from the following Monticello repository:
+or load the NScratch package from the following Monticello repository:
 {{{
 MCHttpRepository
    location: 'http://www.squeaksource.com/nscratch'
