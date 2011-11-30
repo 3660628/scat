@@ -12,6 +12,7 @@
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
 
 If you are behind a web proxy, you need to configure the proxy in the Pharo Settings.
+From time to time, SqueakSource site is down. Please check the availability of this web site before launching the install process.
 
 In order to install the last version of Scat, you can execute the following Gofer expression:
 
