@@ -10,6 +10,9 @@
 <wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
 
 ,,* WARNING * This process will modify some base Morphic classes and methods from the system, so please use a fresh image!,,
+
+If you are behind a web proxy, you need to configure the proxy in the Pharo Settings.
+
 === METACELLO ===
 
 Run the following expression:
