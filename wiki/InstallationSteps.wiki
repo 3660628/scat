@@ -4,7 +4,7 @@
 = Scat: Installation Steps =
 
 == Required Pharo download ==
-  * Download a Pharo 1.2.1 One Click package with CogVM from: [http://gforge.inria.fr/frs/download.php/28439/Pharo-1.2.1-CogOneClick.zip here].
+  * Download a Pharo 1.3 One Click package with CogVM from: [https://gforge.inria.fr/frs/download.php/29274/Pharo-1.3-13315-OneClick.zip here].
 
 == Installation ==
 <wiki:video url="http://www.youtube.com/watch?v=EvnUd4TqkUc"/>
