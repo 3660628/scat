@@ -1,0 +1,30 @@
+# Scat 0.220b - Public release #
+
+After 10 months of in-and-out work, we feel ready to release the first kind of stable, pretty usable, almost working version of Scat, the Scratch port to Pharo.
+
+We are quite satisfied with the current state of the project, as we never imagined we would get that far when we began filing out pieces of dirty, bloated and incomprehensible old code from some antediluvian Squeak image.
+
+But let's get straight to the point, these are some of the remaining issues left to fix in order to get Scat closer to the original Scratch behavior:
+
+  * Some sound blocks, especially in Linux
+  * String entry morphs are quite broken
+  * Encodings are totally broken, Scat can only display English characters
+  * Fonts are not quite working in the paint editor
+  * Some old Scratch projects can't be imported, especially those displaying watcher morphs
+  * Pharo becomes **slow** while running Scat
+
+Of course there are thousands of bugs and issues still to resolve, but a long path has been already walked and we think Scat can now be used for what we intended in the first place: bring the graphic programming metaphor to other areas.
+
+A project we've been longing to start for a while is a music live-coding environment based solely on engaging blocks of different kinds, which the current working code in Scat should let us build without too much hassle!
+
+With this announcement we want to let the community know that, unless some improbable madness outbreak occurs, we are no longer going to maintain the code in Scat, except for occasional small (read tiny) bugfixes.
+
+Anyone willing to take the project from here on is not only welcome, but fervently encouraged to do so, as well as kind of pitied... you don't know what kind of code you're getting into!
+
+With great hopes that someone will someday take the huge pile of anti-engineered code that powers the cat and rewrite it from scratch (pun intended, couldn't help it), we send you our best regards.
+
+The Scat team.
+
+![http://i.imgur.com/uMrin.png](http://i.imgur.com/uMrin.png)
+
+<sub> (and the Scat cat) </sub>

@@ -1,0 +1,165 @@
+# Introduction #
+
+In this page we list all methods added to / modified from system classes upon loading the project.
+
+# Extensions #
+
+  * Object>>isUnicode
+  * Object>>inform:withDetails:
+  * Object>>initFieldsNamed:from:
+  * Object>>storeFieldsNamed:on:
+  * BitBlt>>primDisplayString:from:to:map:xTable:kern:
+  * CharacterScanner>>primScanCharactersFrom:to:in:rightX:stopConditions:kern:
+  * DisplayScanner>>stringExtent:
+  * DisplayScanner>>quickPrintOn:box:font:color:
+  * DisplayScanner>>drawString:at:
+  * Canvas>>paintImage:at:sourceRect:alpha:
+  * Color>>[r255](https://code.google.com/p/scat/source/detail?r=255)
+  * Color>>setRgb:
+  * Color>>b255
+  * Color>>g255
+  * Cursor class>>paintBucket
+  * Cursor class>>resizeHorizontally
+  * Cursor class>>handClosed
+  * Cursor class>>resizeCorner
+  * Cursor class>>handOpen
+  * Cursor class>>fromArray:offset:
+  * Cursor class>>eyeDropper
+  * DamageRecorder>>initialize
+  * DamageRecorder>>filteredDamageWithin:
+  * DisplayScanner class>>quickPrintOn:box:
+  * DisplayScanner class>>quickPrintOn:box:font:
+  * DisplayScanner class>>quickPrintOn:box:font:color:
+  * FileDirectory>>unusedNameStartingWith:
+  * FileDirectory>>directoryEntriesFor:
+  * FileDirectory>>allFileNamesDo:
+  * UnixFileDirectory>>parentDirectory
+  * FileStream class>>readOnlyFileNamedOrNil:
+  * FileStream class>>droppedFiles
+  * StandardFileStream class>>newScratchFileNamed:
+  * FormCanvas>>grafPort
+  * FormCanvas>>text:bounds:font:kern:color:
+  * HandMorph class>>addScratchInstanceVariables
+  * InputEventSensor>>primGetNextEvent:
+  * InputEventSensor>>isUsingEvents
+  * InputEventSensor>>isInterrupEvent:
+  * InputEventSensor>>installInterruptWatcher
+  * InputEventSensor>>userInterruptWatcher
+  * InputEventSensor>>nextEventRecordOfType:
+  * InputEventSensor>>primInterruptSemaphore:
+  * InputEventSensor>>clearKeystate
+  * InputEventSensor>>waitNoButton
+  * InputEventSensor>>waitButtonOrKeyboard
+  * InputEventSensor>>waitButton
+  * InputEventSensor>>fileDropPoint
+  * InputEventSensor>>useOSEvents:
+  * InputEventSensor>>primSetInputSemaphore:
+  * InputEventSensor>>rightButtonPressed
+  * InputEventSensor>>processOSMenuEvents
+  * InputEventSensor>>flushOSEvents
+  * InputEventSensor class>>startUp
+  * InputEventSensor class>>addScratchClassVariables
+  * InputEventSensor class>>addScratchInstanceVariables
+  * InputEventSensor class>>startupFileNames
+  * Magnitude>>within:and:
+  * Number>>isInf
+  * Number>>asNumberNoError
+  * Float>>absFixedPrintBase10On:
+  * Float>>printStringNoExponent
+  * MixedSound>>setPan:volume:for:
+  * Morph>>allowSubmorphExtraction
+  * Morph>>centerInOwner
+  * Morph>>isVisible:
+  * Morph>>ownerThatIsA:
+  * Morph>>backgroundColor
+  * Morph>>mayNeedLayout
+  * Morph>>storeFieldsOn:
+  * Morph>>rootForGrabOf:
+  * Morph>>isVisible
+  * Morph>>initFieldsFrom:version:
+  * HandMorph>>toolType:
+  * HandMorph>>nextUnclaimedKeystrokeOrNil
+  * HandMorph>>clearUnclaimedKeystrokes
+  * HandMorph>>hasMouseFocus:
+  * HandMorph>>gridTo:origin:
+  * HandMorph>>firstClickEvent
+  * HandMorph>>toolType
+  * HandMorph>>rejectDropMorph:event:
+  * HandMorph>>turnOffGridding
+  * HandMorph>>gridPointRaw
+  * ImageMorph>>form:
+  * MenuMorph>>localize
+  * PasteUpMorph>>rootForGrabOf:
+  * ScrollBar>>hasMenuButton:
+  * ScrollBar>>percentVisible:
+  * SimpleButtonMorph>>drawToolTipAbove
+  * SimpleButtonMorph>>drawToolTipAbove:
+  * IconicButton>>labelGraphic:borderWidth:
+  * IconicButton>>labelFromString:
+  * IconicButton>>shedSelvedge
+  * SampledSound>>setSamples:from:to:samplingRate:loudness:
+  * StringMorph>>stringToDisplay
+  * StringMorph>>stringExtent:
+  * StringMorph>>forceUnicodeRendering:
+  * StringMorph>>kern:
+  * StringMorph>>xRangesFor:
+  * StringMorph>>forceUnicodeRendering
+  * StringMorph>>contents:font:
+  * StringMorph>>stringWithEllipses:limitedToWidth:
+  * StringMorph>>rightJustify:
+  * StringMorph>>kern
+  * StringMorph>>leftMargin
+  * StringMorph>>justificationOffsetFor:
+  * StringMorph>>stringHeight:
+  * StringMorph>>stringWidth:
+  * UpdatingStringMorph>>parameter
+  * UpdatingStringMorph>>parameter:
+  * UpdatingStringMorph>>floatPrecision:
+  * MouseEvent>>rightButtonPressed
+  * PositionableStream>>littleEndianUint24:
+  * PositionableStream>>littleEndianUint32:
+  * PositionableStream>>littleEndianUint16
+  * PositionableStream>>littleEndianUint32
+  * PositionableStream>>littleEndianUint24
+  * PositionableStream>>littleEndianUint16:
+  * SMxCustomMenu>>labels
+  * SMxCustomMenu>>localize
+  * SMxCustomMenu>>build
+  * SampledSound>>storeFieldsOn:
+  * SampledSound>>fieldsVersion
+  * SampledSound>>currentPosition
+  * SampledSound class>>fromFileNamed:
+  * SampledSound class>>readSNDFrom:
+  * SampledSound class>>findWAVEChunk:in:ifAbsent:
+  * SampledSound class>>readAIFFrom:
+  * SampledSound class>>readMP3FromFileNamed:
+  * SampledSound class>>readWAVFrom:
+  * SimpleButtonMorph class>>addScratchInstanceVariables
+  * SimpleMIDIPort>>ensureOpenIfFail:
+  * SmalltalkImage>>isMacOSX
+  * SoundBuffer>>storeBigEndianOn:stereo:
+  * SoundBuffer>>swapStereoChannels
+  * SoundBuffer>>reverseEndiannessStereo:
+  * SoundRecorder>>isActive
+  * StrikeFont>>xRangesFor:
+  * StrikeFont>>widthOf:
+  * StrikeFont>>isOSFont:
+  * StrikeFont>>isOSFont
+  * StrikeFont class>>closestNameTo:
+  * StrikeFont class>>fontNames
+  * StrikeFont class>>addScratchClassVariables
+  * StrikeFont class>>fontName:size:
+  * StrikeFont class>>sizesForFontName:
+  * StrikeFont class>>initFonts
+  * StrikeFont class>>osFontName:size:
+  * String>>asNumberNoError
+  * String>>trailingDigits
+  * String>>localized
+  * String>>caseInsensitiveEqual:
+  * String>>asUTF8
+  * String>>indexOfSeparatorStartingAt:
+  * String>>localizedMIDI
+  * String>>asMacRoman
+  * String>>asUTF32
+  * StringMorph class>>addScratchInstanceVariables
+  * UpdatingStringMorph class>>addScratchInstanceVariables

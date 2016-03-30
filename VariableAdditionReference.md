@@ -1,0 +1,46 @@
+# Introduction #
+
+In this page we detail all instance and class variables that are added to system classes upon loading the project.
+
+# Instance Variables #
+
+## HandMorph ##
+  * toolType
+  * formerOwner
+  * formerPosition
+  * unclaimedKeystrokes
+  * firstClickEvent
+  * drawHalfSize
+  * menuTargetOffset
+  * grid
+  * gridOffset
+
+## InputEventSensor ##
+  * events
+  * inputSemaIndex
+  * transitionevents
+  * keystate
+  * buttonstate
+  * cursorpoint
+
+## SimpleButtonMorph ##
+  * drawToolTipAbove
+
+## StringMorph ##
+  * forceUnicodeRendering
+  * kern
+  * rightJustify
+
+
+## UpdatingStringMorph ##
+  * parameter
+
+# Class Variables #
+
+## InputEventSensor ##
+  * StartupFileNames
+  * InterruptSemaphore
+  * InterruptWatcherProcess
+
+## StrikeFont ##
+  * AllFonts
